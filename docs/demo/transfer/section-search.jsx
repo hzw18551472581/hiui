@@ -33,6 +33,7 @@ class Demo extends React.Component {
       <Transfer
         mode='multiple'
         showAllSelect
+        title={['源','目的']}
         searchable
         targetKeys={this.state.targetKeys}
         data={this.state.datas}

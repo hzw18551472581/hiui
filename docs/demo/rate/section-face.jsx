@@ -28,7 +28,10 @@ class Demo extends React.Component {
         <FormItem label="提示">
           <Rate defaultValue={3} useEmoji tooltips={this.tooltips} />
         </FormItem>
-        <FormItem label="禁用">
+        <FormItem label="禁用样式">
+          <Rate defaultValue={0} useEmoji disabled />
+        </FormItem>
+        <FormItem label="只读样式">
           <Rate defaultValue={3} useEmoji disabled />
         </FormItem>
         <FormItem label="禁止清除">

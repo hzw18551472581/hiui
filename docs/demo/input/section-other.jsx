@@ -29,16 +29,16 @@ class Demo extends React.Component {
       return {
         prepend: {
           prepend: '+86',
-          placeholder: '010-12345678'
+          placeholder: '请输入手机号'
         },
         append: {
           append: '@xiaomi.com',
-          placeholder: 'mife'
+          placeholder: '请输入邮箱'
         },
         both: {
           prepend: 'www.',
           append: '.com',
-          placeholder: 'mi'
+          placeholder: '请输入域名'
         }
       }[this.state.value]
     }

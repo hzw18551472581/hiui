@@ -7,7 +7,7 @@
 - 上传本地文档
 - 上传图片附件或照片墙
 
-## 普通
+## 基础用法
 
 import DemoUpload from '../../demo/upload/section-upload.jsx'
 
@@ -64,6 +64,7 @@ import { Badge } from '@libs'
 | type                                          | 上传组件类型                                                                                                                                           | string                                                      | default \| drag \| pictureCard \| avatar \| photo | default                                   |
 | accept                                        | 接收上传的文件类型， 用逗号隔开的 MIME 类型列表，参考 [MDN-MIME 类型](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/MIME_Types)     | string                                                      | -                                                 | -                                         |
 | content                                       | 上传按钮文案                                                                                                                                           | string \| ReactNode                                         | -                                                 | 本地上传                                  |
+| tips                                          | 上传文件提示文案                                                                                                                     | string                                                      | -                                                 | -                                         |
 | maxSize                                       | 接收上传的文件体积上限（单位：KB）                                                                                                                     | number                                                      | -                                                 | -                                         |
 | maxCount                                      | 接收上传的文件最大数量                                                                                                                                 | number                                                      | -                                                 | -                                         |
 | uploadAction                                  | 必选，上传的地址                                                                                                                                       | string                                                      | -                                                 | -                                         |

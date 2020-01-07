@@ -33,6 +33,7 @@ class Demo extends React.Component {
         mode='multiple'
         showAllSelect
         targetLimit={4}
+        title={['源','目的']}
         targetKeys={this.state.targetKeys}
         data={this.state.datas}
         onChange={this.onChange.bind(this)}

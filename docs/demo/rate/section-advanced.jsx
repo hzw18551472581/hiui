@@ -29,7 +29,10 @@ class Demo extends React.Component {
             this.setState({value})
           }} value={value} />
         </FormItem>
-        <FormItem label="禁用">
+        <FormItem label="禁用样式">
+          <Rate allowHalf disabled defaultValue={0} />
+        </FormItem>
+        <FormItem label="只读样式">
           <Rate allowHalf disabled defaultValue={2.5} />
         </FormItem>
         <FormItem label="禁止清除">

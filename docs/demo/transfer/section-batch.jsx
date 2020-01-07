@@ -35,7 +35,7 @@ class Demo extends React.Component {
       <div>
         <Transfer
           mode='multiple'
-          title={['批量']}
+          title={['源','目的']}
           disabled={this.state.disabled}
           targetKeys={this.state.targetKeys}
           data={this.state.datas}

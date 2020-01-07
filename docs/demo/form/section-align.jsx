@@ -55,10 +55,10 @@ class Demo extends React.Component {
           <Col span={12}>
             <Form labelWidth='80' labelPlacement={this.state.position}>
               <FormItem label='姓名'>
-                <Input placeholder='username' />
+                <Input placeholder='请输入姓名' />
               </FormItem>
               <FormItem label='手机号码'>
-                <Input placeholder='phone' />
+                <Input placeholder='请输入手机号码' />
               </FormItem>
               <FormItem label='备注'>
               <Input
