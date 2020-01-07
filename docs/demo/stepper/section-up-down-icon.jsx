@@ -2,11 +2,13 @@ import React from 'react'
 import DocViewer from '../../../libs/doc-viewer'
 import Stepper from '../../../components/stepper'
 import Icon from '../../../components/icon'
+import Tooltip from '../../../components/tooltip'
 const prefix = 'stepper-up-down-icon'
 const desc = '上下结构的图标用法需要加入 itemLayout="vertical"，并在添加 Icon'
 const code = `import React from 'react'
 import Icon from '@hi-ui/hiui/es/icon'
-import Stepper from '@hi-ui/hiui/es/stepper'\n
+import Stepper from '@hi-ui/hiui/es/stepper'
+import Tooltip from '@hi-ui/hiui/es/tooltip'\n
 class Demo extends React.Component {
   render() {
     const list = [
@@ -18,7 +20,7 @@ class Demo extends React.Component {
       {
         title: '邮箱激活',
         content: '请输入邮箱',
-        icon: <Icon name='time' />
+        icon: <Tooltip title='邮箱激活' placement='top' ><Icon name='time' /></Tooltip>
       },
       {
         title: '信息登记',
@@ -39,6 +41,6 @@ class Demo extends React.Component {
   }
 }`
 const DemoUpDownIcon = () => (
-  <DocViewer code={code} scope={{ Stepper, Icon }} prefix={prefix} desc={desc} />
+  <DocViewer code={code} scope={{ Stepper, Icon, Tooltip }} prefix={prefix} desc={desc} />
 )
 export default DemoUpDownIcon

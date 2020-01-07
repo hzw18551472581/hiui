@@ -9,6 +9,7 @@ class Demo extends React.Component {
   render () {
     const data = [{
       content: '首页',
+      icon: 'left',
       path: '/home'
     }, {
       content: '产品类',

@@ -8,10 +8,10 @@ class Demo extends React.Component {
   render () {
     return (
       <div>
-        <Icon name="info-circle-o" style={{color: '#4284F5', fontSize: '24px'}} />
-        <Icon name="check-circle-o" style={{color: '#1DA653', fontSize: '24px'}} />
-        <Icon name="close-circle-o" style={{color: '#EB5252', fontSize: '24px'}} />
-        <Icon name="close" style={{color: '#999', fontSize: '24px'}} />
+        <Icon name="edit" style={{fontSize: '24px'}} />
+        <Icon name="building" style={{fontSize: '24px'}} />
+        <Icon name="check-circle-o" style={{fontSize: '24px'}} />
+        <Icon name="qr" style={{fontSize: '24px'}} />
       </div>
     )
   }

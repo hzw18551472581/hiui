@@ -15,6 +15,7 @@ class Demo extends React.Component {
       },
       {
         content: '小米MIX',
+        icon: 'alarm',
         id: 2
       },
       {
@@ -56,7 +57,6 @@ class Demo extends React.Component {
           },
           {
             content: '红米',
-            icon: 'phone',
             id: 'hongmi'
           },
           {
@@ -88,6 +88,7 @@ class Demo extends React.Component {
       },
       {
         content: '超长超长超长字符超长超长超长字符',
+        icon: 'alarm',
         id: 4
       }
     ]

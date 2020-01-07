@@ -11,13 +11,31 @@ import Button from '@hi-ui/hiui/es/button'\n
 class Demo extends React.Component {
   render () {
     return (
-      <Button.Group>
-        <Button type="default">固定</Button>
-        <Button type="default">高亮</Button>
-        <Button type="default">求和</Button>
-        <Button type="default">求平均值</Button>
-        <Button type="default">删除</Button>
-      </Button.Group>
+      <div>
+        <div>
+          <Button.Group>
+            <Button type="line" style={{marginRight:'20px'}}>取消</Button>
+            <Button type="primary">确定</Button>
+          </Button.Group>
+        </div>
+        <br/>
+        <div>
+          <Button.Group>
+            <Button type="default" style={{marginRight:'20px'}}>重置</Button>
+            <Button type="default" style={{color:'#4285F4'}}>确定</Button>
+          </Button.Group>
+        </div>
+        <br/>
+        <div>
+          <Button.Group>
+            <Button type="default">固定</Button>
+            <Button type="default">高亮</Button>
+            <Button type="default">求和</Button>
+            <Button type="default">求平均值</Button>
+            <Button type="default">删除</Button>
+          </Button.Group>
+        </div>
+      </div>
     )
   }
 }`,
@@ -29,13 +47,31 @@ import Button from '@hi-ui/hiui/es/button'\n
 class Demo extends React.Component {
   render () {
     return (
-      <Button.Group>
-        <Button type="default">固定</Button>
-        <Button type="default" disabled>高亮</Button>
-        <Button type="default">求和</Button>
-        <Button type="default">求平均值</Button>
-        <Button type="default" disabled>删除</Button>
-      </Button.Group>
+      <div>
+        <div>
+          <Button.Group>
+            <Button type="line" style={{marginRight:'20px'}}>取消</Button>
+            <Button type="primary">确定</Button>
+          </Button.Group>
+        </div>
+        <br/>
+        <div>
+          <Button.Group>
+            <Button type="default" style={{marginRight:'20px'}} disabled>重置</Button>
+            <Button type="default" style={{color:'#4285F4'}}>确定</Button>
+          </Button.Group>
+        </div>
+        <br/>
+        <div>
+          <Button.Group>
+            <Button type="default">固定</Button>
+            <Button type="default" disabled>高亮</Button>
+            <Button type="default">求和</Button>
+            <Button type="default">求平均值</Button>
+            <Button type="default" disabled>删除</Button>
+          </Button.Group>
+        </div>
+      </div>
     )
   }
 }`,

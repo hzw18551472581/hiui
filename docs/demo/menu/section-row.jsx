@@ -10,18 +10,19 @@ class Demo extends React.Component {
       {
         content: '电视',
         id: 1,
-        icon: 'internet'
+        icon: 'pc'
       },
       {
         content: '小米MIX',
+        icon: 'phone',
         id: 2
       },
       {
         content: '手机',
+        icon: 'phone',
         children: [
           {
             content: '小米',
-            icon: 'phone',
             children: [
               {
                 content: '小米9',
@@ -88,6 +89,7 @@ class Demo extends React.Component {
       },
       {
         content: '超长超长超长字符超长超长超长字符',
+        icon: 'more',
         id: 4
       }
     ]

@@ -9,11 +9,12 @@ class Demo extends React.Component {
     const datas = [
       {
         content: '电视',
-        icon: 'internet',
+        icon: 'pc',
         id: 1
       },
       {
         content: '小米MIX',
+        icon: 'phone',
         id: 2
       },
       {
@@ -55,7 +56,6 @@ class Demo extends React.Component {
           },
           {
             content: '红米',
-            icon: 'phone',
             id: 'hongmi'
           },
           {
@@ -87,6 +87,7 @@ class Demo extends React.Component {
       },
       {
         content: '超长超长超长字符超长超长超长字符',
+        icon: 'more',
         id: 4
       }
     ]
