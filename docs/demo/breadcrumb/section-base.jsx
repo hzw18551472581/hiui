@@ -27,7 +27,7 @@ class Demo extends React.Component {
     }]
     return (
       <div>
-        <Breadcrumb data={data}/>
+        <Breadcrumb data={data} separator='/'/>
       </div>
     )
   }
