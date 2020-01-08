@@ -3,14 +3,12 @@ import DocViewer from '../../../libs/doc-viewer'
 import Form from '../../../components/form/index'
 import FormItem from '../../../components/form/Item'
 import Rate from '../../../components/rate'
-import Alert from '../../../components/alert'
 const prefix = 'rate-face'
-const desc = '运用图标直观表达评级结果的优劣'
+const desc = `使用表情后将不可自定义数量，不可定义半星      运用图标直观表达评级结果的优劣`
 const code = `import React from 'react'
 import Rate from '@hi-ui/hiui/es/rate'
 import Form from '@hi-ui/hiui/es/form/index'
 import FormItem from '@hi-ui/hiui/es/form/item'
-import Alert from '@hi-ui/hiui/es/alert'\n
 class Demo extends React.Component {
   constructor() {
     super()
@@ -20,8 +18,6 @@ class Demo extends React.Component {
   render() {
     return (
       <Form labelWidth="80" labelPosition="left">
-        <Alert type="warning" title="使用表情后将不可自定义数量，不可定义半星" closeable={false} />
-        <br />
         <FormItem label="基础">
           <Rate defaultValue={3} useEmoji />
         </FormItem>
@@ -44,7 +40,7 @@ class Demo extends React.Component {
 const DemoBase = () => (
   <DocViewer
     code={code}
-    scope={{ Form, FormItem, Rate, Alert }}
+    scope={{ Form, FormItem, Rate }}
     prefix={prefix}
     desc={desc}
   />

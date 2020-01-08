@@ -23,7 +23,7 @@ class Demo extends React.Component {
       rules: {
         name: {
           required: true,
-          message: <span style={{color: '#ccc'}}>请输入名称</span>,
+          message: '请输入名称',
           trigger: 'onBlur,onChange'
         },
         region: {
@@ -110,7 +110,7 @@ class Demo extends React.Component {
             </FormItem>
             <FormItem>
               <Button type='primary' onClick={this.handleSubmit.bind(this)}>提交</Button>
-              <Button onClick={this.cancelSubmit.bind(this)}>重置</Button>
+              <Button type='line' onClick={this.cancelSubmit.bind(this)}>重置</Button>
             </FormItem>
           </Form>
         </Col>

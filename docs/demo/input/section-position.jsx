@@ -45,9 +45,9 @@ class Demo extends React.Component {
           prepend: ele
         },
         append: {
-          append: <Button type="primary" onClick={() => {
+          append: <Button type="line" icon='search' onClick={() => {
             Message.open({ type: 'success', title: '查询成功', duration: 2000 })
-          }}>查询</Button>
+          }}/>
         }
       }[this.state.value]
     }

@@ -19,7 +19,7 @@ class Demo extends React.Component {
           type="normal"
           uploadAction= "http://www.mocky.io/v2/5dc3b4413000007600347501"
           headers={{name: 'mi'}}
-          content='选择文件'
+          content='上传文件'
           tips="只能上传jpg/png文件，且不超过500kb"
           maxSize={500}
           param={param}

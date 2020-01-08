@@ -1,78 +1,84 @@
 import React from 'react'
 import DocViewer from '../../../libs/doc-viewer'
-import Grid from '../../../components/grid'
 import Input from '../../../components/input'
-import Radio from '../../../components/radio'
+const rightOptions = ['基础', '默认值', '禁用', '可清除']
 const prefix = 'input-type'
-const code = `import React from 'react'
-import Grid from '@hi-ui/hiui/es/grid'
-import Radio from '@hi-ui/hiui/es/radio'
-import Input from '@hi-ui/hiui/es/input'\n
-class Demo extends React.Component {
-  constructor () {
-    super()
-    this.state = {
-      types: [{
-        id: 'text',
-        content: '普通'
-      }, {
-        id: 'id',
-        content: '身份证'
-      }, {
-        id: 'tel',
-        content: '手机号'
-      }, {
-        id: 'amount',
-        content: '浮点数'
-      }],
-      type: 'text'
+const code = [{
+  code: `import React from 'react'
+  import Grid from '@hi-ui/hiui/es/grid'
+  import Radio from '@hi-ui/hiui/es/radio'
+  import Input from '@hi-ui/hiui/es/input'\n
+  class Demo extends React.Component {
+    render() {
+      return (
+        <Input
+          style={{ width: 250 }}
+          placeholder='请输入'
+        />
+      )
     }
-    this.getPlaceholder = () => {
-      return {
-        text: '请输入...',
-        id: '请输入身份证号',
-        tel: '请输入手机号码',
-        amount: '请输入浮点数'
-      }[this.state.type]
+  }`,
+  opt: ['基础']
+}, {
+  code: `import React from 'react'
+  import Grid from '@hi-ui/hiui/es/grid'
+  import Radio from '@hi-ui/hiui/es/radio'
+  import Input from '@hi-ui/hiui/es/input'\n
+  class Demo extends React.Component {
+    render() {
+      return (
+        <Input
+          style={{ width: 250 }}
+          placeholder='请输入'
+          defaultValue="Input输入框"
+        />
+      )
     }
-  }
-  render() {
-    const Row = Grid.Row
-    const Col = Grid.Col
-    const { types, type } = this.state
-    return (
-      <div>
-        <Row gutter>
-          <Col span={12}>
-            <Radio.Group
-              data={types}
-              type='button'
-              value={type}
-              onChange={(type) => {
-                this.setState({ type })
-              }}
-            />
-          </Col>
-        </Row>
-        <Row gutter>
-          <Col span={12}>
-            <Input
-              type={type}
-              placeholder={this.getPlaceholder()}
-              style={{ width: 250 }}
-            />
-          </Col>
-        </Row>
-      </div>
-    )
-  }
-}`
+  }`,
+  opt: ['默认值']
+}, {
+  code: `import React from 'react'
+  import Grid from '@hi-ui/hiui/es/grid'
+  import Radio from '@hi-ui/hiui/es/radio'
+  import Input from '@hi-ui/hiui/es/input'\n
+  class Demo extends React.Component {
+    render() {
+      return (
+        <Input
+          style={{ width: 250 }}
+          placeholder='请输入'
+          disabled
+        />
+      )
+    }
+  }`,
+  opt: ['禁用']
+}, {
+  code: `import React from 'react'
+  import Grid from '@hi-ui/hiui/es/grid'
+  import Radio from '@hi-ui/hiui/es/radio'
+  import Input from '@hi-ui/hiui/es/input'\n
+  class Demo extends React.Component {
+    render() {
+      return (
+        <Input
+          style={{ width: 250 }}
+          placeholder='请输入'
+          defaultValue="Input输入框"
+          clearable
+        />
+      )
+    }
+  }`,
+  opt: ['可清除']
+}]
 
 const DemoType = () => (
   <DocViewer
     code={code}
-    scope={{ Grid, Input, Radio }}
+    scope={{ Input }}
     prefix={prefix}
+    rightOptions={rightOptions}
   />
 )
 export default DemoType

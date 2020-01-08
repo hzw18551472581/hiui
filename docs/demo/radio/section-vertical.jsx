@@ -1,12 +1,10 @@
 import React from 'react'
 import DocViewer from '../../../libs/doc-viewer'
 import Radio from '../../../components/radio'
-const prefix = 'radio-type'
+const prefix = 'btn-placement'
 const code = `import React from 'react'
-import Radio from '@hi-ui/hiui/es/radio'
-
+import Radio from '@hi-ui/hiui/es/radio'\n
 class Demo extends React.Component {
-  
   constructor() {
     super()
     this.list = [{
@@ -29,16 +27,17 @@ class Demo extends React.Component {
       <Radio.Group
         data={this.list}
         defaultValue={0}
+        placement='vertical'
         onChange={(data) => console.log(data)}
       />
     )
   }
 }`
-const DemoType = () => (
+const DemoVertical = () => (
   <DocViewer
     code={code}
     scope={{ Radio }}
     prefix={prefix}
   />
 )
-export default DemoType
+export default DemoVertical

@@ -11,7 +11,7 @@ class Demo extends React.Component {
       <Upload
         type="normal"
         uploadAction= "http://www.mocky.io/v2/5dc3b4413000007600347501"
-        buttonText="上传文件"
+        content="上传文件"
         params={{id:'uid',channel:'youpin'}}
         disabled={true}
       />

@@ -11,11 +11,13 @@ class Demo extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <Button type="primary" appearance="link">突出链接</Button>
-        <Button type="default" appearance="link">默认链接</Button>
-        <Button type="success" appearance="link">成功链接</Button>
-        <Button type="danger" appearance="link">危险链接</Button>
+        <Button type="primary" appearance="link">编辑</Button>
+        <Button type="default" appearance="link">查看更多</Button>
+        <Button type="success" appearance="link">复制链接到微信</Button>
+        <Button type="danger" appearance="link">删除</Button>
         <Button type="line" appearance="link" icon="edit" />
+        <Button type="line" appearance="link" icon="down">展开更多</Button>
+        <Button type="line" appearance="link" icon="plus">新增筛选项目</Button>
       </React.Fragment>
     )
   }
@@ -29,11 +31,13 @@ class Demo extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <Button disabled type="primary" appearance="link">突出链接</Button>
-        <Button disabled type="default" appearance="link">默认链接</Button>
-        <Button disabled type="success" appearance="link">成功链接</Button>
-        <Button disabled type="danger" appearance="link">危险链接</Button>
-        <Button disabled type="line" appearance="link" icon="edit" />
+        <Button type="primary" appearance="link">编辑</Button>
+        <Button type="default" appearance="link">查看更多</Button>
+        <Button type="success" appearance="link">复制链接到微信</Button>
+        <Button type="danger" appearance="link">删除</Button>
+        <Button type="line" appearance="link" icon="edit" />
+        <Button type="line" appearance="link" icon="down">展开更多</Button>
+        <Button type="line" appearance="link" icon="plus">新增筛选项目</Button>
       </React.Fragment>
     )
   }

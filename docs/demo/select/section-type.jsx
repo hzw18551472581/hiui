@@ -12,7 +12,6 @@ class Demo extends React.Component {
   constructor () {
     super()
     this.state = {
-      value: '3',
       singleList: [
         { title:'电视', id:'3', disabled: true },
         { title:'手机', id:'2' },
@@ -28,10 +27,10 @@ class Demo extends React.Component {
     return (
       <Select
         type='single'
-        clearable={false}
+        clearable
         style={{ width: 200 }}
         data={singleList}
-        defaultValue={value}
+        placeholder='请选择'
       />
     )
   }
