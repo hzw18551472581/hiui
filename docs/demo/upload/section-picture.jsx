@@ -11,6 +11,7 @@ class Demo extends React.Component {
       <Upload
         type="pictureCard"
         uploadAction= "http://www.mocky.io/v2/5dc3b4413000007600347501"
+        content='上传图片'
         headers={{name: 'mi'}}
         onChange = {(file, fileList, response) => {
           console.log('upload callback', file, fileList, response)
